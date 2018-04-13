@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar_wrapper"
+        layout="@layout/toolbar_main" />
+
+    <ScrollView
+        android:id="@+id/root_scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_wrapper">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/content_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/additional_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="@string/additional_info"
+                android:textAlignment="center"
+                android:padding="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/colorBlack"/>
+
+            <LinearLayout
+                android:id="@+id/job_facts_wrapper"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_category"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/additional_info"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/enter_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPink"
+                    android:paddingBottom="@dimen/padding_bottom_category_title"
+                    android:paddingEnd="@dimen/padding_category_end"
+                    android:paddingStart="@dimen/padding_category_start"
+                    android:paddingTop="@dimen/padding_top_category_title"
+                    android:text="@string/enter_data_title"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <include layout="@layout/job_facts_layout" />
+
+                <include layout="@layout/cycle_time_layout" />
+
+                <include layout="@layout/reject_rates_layout" />
+
+                <include layout="@layout/up_time_layout" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/first_arrow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_bold_down"
+                        app:layout_constraintEnd_toStartOf="@+id/second_arrow"
+                        app:layout_constraintHorizontal_chainStyle="spread_inside"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/second_arrow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_bold_down"
+                        app:layout_constraintEnd_toStartOf="@+id/third_arrow"
+                        app:layout_constraintStart_toEndOf="@+id/first_arrow" />
+
+                    <ImageView
+                        android:id="@+id/third_arrow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_bold_down"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/second_arrow" />
+                </android.support.constraint.ConstraintLayout>
+
+                <include layout="@layout/effects_of_cycle_time_layout" />
+
+                <include layout="@layout/effects_of_reject_rate_layout" />
+
+                <include layout="@layout/effects_of_up_time_layout" />
+
+                <include layout="@layout/summary_layout" />
+
+            </LinearLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/shadow_top"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/reset_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="@color/colorWhite"
+            android:text="@string/reset_btn_text"
+            android:textAllCaps="false"
+            android:background="@drawable/background_pink_btn"
+            app:layout_constraintEnd_toStartOf="@+id/print_btn"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/print_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/print_btn_text"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/background_primary_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/reset_btn" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

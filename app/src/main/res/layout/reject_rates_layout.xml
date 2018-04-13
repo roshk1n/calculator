@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_category"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/reject_rate_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reject_rate_title"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/reject_rate_quoted_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/reject_rate_quited"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toBottomOf="@+id/reject_rate_quoted_pick"
+        app:layout_constraintEnd_toStartOf="@+id/reject_rate_quoted_pick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/reject_rate_quoted_pick" />
+
+    <newsoft.calculator.CustomPicker
+        android:id="@+id/reject_rate_quoted_pick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reject_rate_title" />
+
+    <TextView
+        android:id="@+id/reject_rate_actual_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/reject_rate_actual"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toBottomOf="@+id/reject_rate_actual_pick"
+        app:layout_constraintEnd_toStartOf="@+id/reject_rate_actual_pick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/reject_rate_actual_pick" />
+
+    <newsoft.calculator.CustomPicker
+        android:id="@+id/reject_rate_actual_pick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reject_rate_quoted_pick" />
+
+</android.support.constraint.ConstraintLayout>

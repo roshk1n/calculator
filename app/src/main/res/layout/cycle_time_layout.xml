@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_category"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/cycle_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cycle_time_title"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cycle_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cycle_time_quited_title"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toBottomOf="@+id/quoted_cycle_time_pick"
+        app:layout_constraintEnd_toStartOf="@+id/quoted_cycle_time_pick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/quoted_cycle_time_pick" />
+
+    <newsoft.calculator.CustomPicker
+        android:id="@+id/quoted_cycle_time_pick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cycle_title" />
+
+    <TextView
+        android:id="@+id/actual_cycle_time_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cycle_time_actual_title"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toBottomOf="@+id/actual_cycle_time_pick"
+        app:layout_constraintEnd_toStartOf="@+id/actual_cycle_time_pick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/actual_cycle_time_pick" />
+
+    <newsoft.calculator.CustomPicker
+        android:id="@+id/actual_cycle_time_pick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quoted_cycle_time_pick" />
+
+</android.support.constraint.ConstraintLayout>

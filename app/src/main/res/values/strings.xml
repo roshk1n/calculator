@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="main_title">RETURN ON INVESTMENT(ROL) CALCULATOR</string>
+    <string name="additional_info">This worksheet is designed to allow managers to take production data
+    from a specific molding job, plug that data into simple formulas then determine if profits are being
+    lost through inefficiency on the production floor. In many cases, these inefficiencies are
+    directly caused by misunderstandings and lack of training on the production floor. Training can
+    eliminate these inefficiencies and get your closer to your quoted profits.</string>
+
+    <string name="enter_data_title">Enter Your Data Below</string>
+
+    <string name="dollar_holder">$%1$.2f</string>
+    <string name="minus_dollar_holder">($%1$.2f)</string>
+
+    <string name="job_facts_title">Job Facts</string>
+    <string name="job_facts_total_hours_title">Total Hours for Job (hrs)</string>
+    <string name="job_facts_machine_hour_title">Quoted Machine Hour Rate ($/hr)</string>
+    <string name="job_facts_profit_title">Quoted % profit</string>
+
+    <string name="cycle_time_title">Cycle Time</string>
+    <string name="cycle_time_quited_title">Quited Cycle Time (sec)</string>
+    <string name="cycle_time_actual_title">Actual Cycle Time (sec)</string>
+
+    <string name="reject_rate_title">Reject Rates</string>
+    <string name="reject_rate_quited">Quoted Reject Rate (%)</string>
+    <string name="reject_rate_actual">Actual Reject Rate (%)</string>
+    <string name="up_time_title">Up-Time</string>
+    <string name="up_time_quoted_title">Quoted Up-Time (%)</string>
+    <string name="up_time_actual_title">Actual Up-Time (%)</string>
+
+
+    <string name="effect_of_cycle_title">Effects of Cycle Time Gain/Loss</string>
+    <string name="effect_of_cycle_actual">Actual Machine Hour Rate (AMHR)</string>
+    <string name="effect_of_cycle_gain_in_machine_title">Gain/(Loss) in Machine Hour Rate (MHR)</string>
+    <string name="effect_of_cycle_gain_from_quoted_title">Gain/(Loss) from Quoted Cycle Time</string>
+    <string name="effect_of_reject_group_title">Effects of Reject Rate Gain/Loss</string>
+    <string name="effect_of_reject_quoted_title">Gain/(Loss) from Quoted Reject Rates</string>
+    <string name="effect_of_up_time_quoted_title">Gain/(Loss) from Quoted Up-Time</string>
+    <string name="effect_of_up_time_group">Effects of Up-Time Gain/Loss</string>
+    <string name="summary_group">Summary</string>
+    <string name="summary_quoted_profit_title">Quoted Profit</string>
+    <string name="summary_cycle_time_title">Cycle Time Gain/(Loss)</string>
+    <string name="summary_reject_rate_title">Reject Rate Gain/(Loss)</string>
+    <string name="summary_up_time_title">Up-Time Gain/(Loss)</string>
+    <string name="summary_total_profit_title">Total Profit</string>
+    <string name="summary_total_gain_title">Total Gain/(Loss) of Quoted Profit</string>
+    <string name="reset_btn_text">Reset</string>
+    <string name="print_btn_text">Print</string>
+
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/fact_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/job_facts_title"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/total_hours_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/job_facts_total_hours_title"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toBottomOf="@+id/total_hours_pick"
+        app:layout_constraintEnd_toStartOf="@+id/total_hours_pick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/total_hours_pick" />
+
+    <newsoft.calculator.CustomPicker
+        android:id="@+id/total_hours_pick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fact_title" />
+
+    <TextView
+        android:id="@+id/machine_hours_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/job_facts_machine_hour_title"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toBottomOf="@+id/machine_hours_pick"
+        app:layout_constraintEnd_toStartOf="@+id/machine_hours_pick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/machine_hours_pick" />
+
+    <newsoft.calculator.CustomPicker
+        android:id="@+id/machine_hours_pick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_hours_pick" />
+
+    <TextView
+        android:id="@+id/profits_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/job_facts_profit_title"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toBottomOf="@+id/profit_pick"
+        app:layout_constraintEnd_toStartOf="@+id/profit_pick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profit_pick" />
+
+    <newsoft.calculator.CustomPicker
+        android:id="@+id/profit_pick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/machine_hours_pick" />
+
+</android.support.constraint.ConstraintLayout>

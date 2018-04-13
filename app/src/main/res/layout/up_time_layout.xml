@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_category"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/up_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/up_time_title"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/up_time_quoted_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/up_time_quoted_title"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toBottomOf="@+id/up_time_quoted_pick"
+        app:layout_constraintEnd_toStartOf="@+id/up_time_quoted_pick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/up_time_quoted_pick" />
+
+    <newsoft.calculator.CustomPicker
+        android:id="@+id/up_time_quoted_pick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/up_time_title" />
+
+    <TextView
+        android:id="@+id/up_time_actual_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/up_time_actual_title"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toBottomOf="@+id/up_time_actual_pick"
+        app:layout_constraintEnd_toStartOf="@+id/up_time_actual_pick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/up_time_actual_pick" />
+
+    <newsoft.calculator.CustomPicker
+        android:id="@+id/up_time_actual_pick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/up_time_quoted_pick" />
+
+</android.support.constraint.ConstraintLayout>
