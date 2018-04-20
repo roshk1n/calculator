@@ -2,6 +2,13 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 27
+    signingConfigs {
+        release {
+            storePassword "39HSMO2yMThl"
+            keyAlias "PaulsonTrainingPrograms"
+            keyPassword "39HSMO2yMThl"
+        }
+    }
     defaultConfig {
         applicationId "newsoft.calculator"
         minSdkVersion 21
