@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Calculator</string>
+    <string name="app_name">ROI Calculator</string>
     <string name="main_title">RETURN ON INVESTMENT(ROL) CALCULATOR</string>
     <string name="additional_info">This worksheet is designed to allow managers to take production data
     from a specific molding job, plug that data into simple formulas then determine if profits are being
